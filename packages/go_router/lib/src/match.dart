@@ -86,8 +86,8 @@ abstract class RouteMatchBase with Diagnosticable {
 
   /// Returns a navigator key to route matches maps.
   ///
-  /// The null key corresponds to the route matches of `scopedNavigatorKey`.
-  /// The scopedNavigatorKey must not be part of the returned map; otherwise,
+  /// The null key corresponds to the route matches of [scopedNavigatorKey].
+  /// The [scopedNavigatorKey] must not be part of the returned map; otherwise,
   /// it is impossible to order the matches.
   static Map<GlobalKey<NavigatorState>?, List<RouteMatchBase>>
   _matchByNavigatorKey({
